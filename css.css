@@ -1,0 +1,14 @@
+.body{
+  background-image: image('images/backGround.jpg');
+}
+.body{
+  width: 1000px;
+  height: 1000px;
+}
+.learn-class{
+  display: none;
+}
+
+.end-lesson{
+  display: none;
+}
