@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+  
   function PipeGame(){
     // var notes =[
     //   {note:'do',secuence:[0,1,2,3,4,5,6,]},
