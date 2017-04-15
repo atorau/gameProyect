@@ -4,32 +4,182 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css.css">
+  <link rel="stylesheet" href="midi">
   <title>Document</title>
 </head>
-
-<body>
-  <div class="introduccion">
-
-  </div>
-  <div class="learn-class">
-    <div class="tittle">
-      <h1>Las Notas></h1>
+<header>
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Disfruta aprendiendo: GAITA ASTURIANA</a>
     </div>
-    <section id="buttons-container">
-      <input type="checkbox" id="cbox1" value="atras">
-      <input type="checkbox" id="cbox2" value="primero">
-      <input type="checkbox" id="cbox3" value="segundo">
-      <input type="checkbox" id="cbox4" value="tercero">
-      <input type="checkbox" id="cbox5" value="cuarto">
-      <input type="checkbox" id="cbox6" value="quinto">
-      <input type="checkbox" id="cbox7" value="sexto">
-      <input type="checkbox" id="cbox8" value="septimo">
-      <input type="checkbox" id="cbox1" value="octavo">
-  </section>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Secciones <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Apende las Notas</a></li>
+            <li><a href="#">Prueba las notas</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Tu primera canción</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
   </div>
-  <div class="end-lesson">
+</nav>
+</header>
+<body>
+  <div class="pantalla" >
+    <div class="col-md-6">
+      <div class="container">
+        <div id="Inicio" class="carousel slide" data-ride="carousel">
+          <div id="contenedorTexto">
+            <div id="textoStarwars">
+                Bienvenidos al primer curso interativo de Gaita Asturiana<br/><br/>
+                A lo largo de este curso, aprenderás las nociones básicas para poder tocar una Gaita con la digitalizacion Asturiana,
+                y aprenderás la secuencia de notas necesaria para poder tocar el <br><i><u>"Himno de Asturias!!!!"</u></i> <br><br><br><br><h3>Disfruta aprendiendo!!!</h3>
+            </div>
+            <audio src="midi/intro.mp3" preload="auto" controls autoplay=""></audio>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+  <div class="pantalla" style="display: none">
+    <div class="col-md-6">
+    <div class="container">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="PunteroLimpio" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="punteroDestapado"></li>
+      <li data-target="#myCarousel" data-slide-to="sigrave"></li>
+      <li data-target="#myCarousel" data-slide-to="do"></li>
+      <li data-target="#myCarousel" data-slide-to="re"></li>
+      <li data-target="#myCarousel" data-slide-to="mi"></li>
+      <li data-target="#myCarousel" data-slide-to="fa"></li>
+      <li data-target="#myCarousel" data-slide-to="sol"></li>
+      <li data-target="#myCarousel" data-slide-to="la"></li>
+      <li data-target="#myCarousel" data-slide-to="si"></li>
+      <li data-target="#myCarousel" data-slide-to="Do"></li>
+    </ol>
 
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <img id="Punteros" src="images/PunteroDestapado.jpg" alt="Limpio" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Puntero sin pulsaciones</h3>
+          <p>Esto es un puntero de gaita con todos los agujero destapados.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img id="Punteros" src="images/PunteroSiGrave.jpg" alt="Limpio" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Nota 'si grave'</h3>
+          <p>Esto es un puntero de gaita con todos los agujero tapados estaríamos tocando un 'si grave'.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img id="Punteros" src="images/punteroDo.jpg" alt="do" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Nota 'do'</h3>
+          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img id="Punteros" src="images/punteroRe.jpg" alt="Flower" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Nota 're'</h3>
+          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img id="Punteros" src="images/punteroMi.jpg" alt="Flower" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Nota 'mi'</h3>
+          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img id="Punteros" src="images/punteroFa.jpg" alt="Flower" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Nota 'fa'</h3>
+          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img id="Punteros" src="images/punteroSol.jpg" alt="Flower" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Nota 'sol'</h3>
+          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img id="Punteros" src="images/punteroLa.jpg" alt="Flower" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Nota 'la'</h3>
+          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img id="Punteros" src="images/punteroSi.jpg" alt="Flower" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Nota 'si'</h3>
+          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img id="Punteros" src="images/punteroDO!.jpg" alt="Flower" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Nota 'Do'</h3>
+          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
+</div>
+    <div class="Boton-Next">
+      <a href="#" class="butonSiguiente">
+    		<span class="icon-house"></span>Siguiente
+    	</a>
+
+    </div>
+  </div>
+</div>
 </body>
+<script src="logicalPart.js"></script>
 </html>
