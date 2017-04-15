@@ -1,5 +1,7 @@
 $(document).ready(function() {
-  
+$('.dos').toggle();
+
+
   function PipeGame(){
     // var notes =[
     //   {note:'do',secuence:[0,1,2,3,4,5,6,]},
@@ -35,15 +37,14 @@ this.sequence = [];
 // if(this.sequence !== this.actualNote ? alert('lo haces mal') : alert('bien'));
 
 
+function changeframe(){
+    $(".Boton-Next").click(function(){
+      $(this).parent().parent().parent().toggle();
+      $('.dos').toggle();
+});
+}
 
-// $(".pantalla").click(function(){
-//   $(".pantalla").show();
-//   $(this).hide();
-// });
-
-
-
-
+changeframe();
 
 
 //this.sequence.length===notes.secuence.length && this.sequence.every(function(v,i) { return v === notes.secuence[i]});
