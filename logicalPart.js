@@ -1,5 +1,7 @@
 $(document).ready(function() {
+$('.uno').toggle();
 $('.dos').toggle();
+// $('.tres').toggle();
 
 
   function PipeGame(){

@@ -162,3 +162,72 @@ body{
    0% { transform: rotateX(45deg) translateY(300px); }
   100% { transform: rotateX(45deg) translateY(-400px); }
 }
+
+#mapeado{
+  margin: 0 auto;
+  width: 65%;
+  padding-left: 20%;
+}
+
+.izquierda{
+  z-index: 2;
+  float:right;
+  position:relative;
+  transform:translate(0px);
+        -ms-transform:translate(0px);
+        -moz-transform:translate(0px);
+        -webkit-transform:translate(0px);
+        -o-transform:translate(0px);
+        -webkit-transition: all 500ms ease-in-out;
+        -moz-transition: all 500ms ease-in-out;
+        -ms-transition: all 500ms ease-in-out;
+        -o-transition: all 500ms ease-in-out;
+}
+.container{
+  z-index: -3;
+  background: linear-gradient(to right,rgba(0, 0, 0,0),white,white,white,rgba(0, 0, 0,0)); /* Standard syntax */
+}
+
+.pulsadasIz{
+  position:absolute;
+  z-index: 1;
+  display:block;
+  left:73.7%;
+}
+.izquierda:hover{
+      transform:translate(-90px,0px);
+      -ms-transform:translate(-90px,0px); // IE 9
+      -moz-transform:translate(-90px,0px); // Firefox
+      -webkit-transform:translate(-90px,0px); // Safari and Chrome
+      -o-transform:translate(-90px,0px); // Opera
+}
+.derecha{
+  z-index: 2;
+  float:left;
+  position:relative;
+  transform:translate(0px);
+        -ms-transform:translate(0px);
+        -moz-transform:translate(0px);
+        -webkit-transform:translate(0px);
+        -o-transform:translate(0px);
+        -webkit-transition: all 500ms ease-in-out;
+        -moz-transition: all 500ms ease-in-out;
+        -ms-transition: all 500ms ease-in-out;
+        -o-transition: all 500ms ease-in-out;
+}
+
+.pulsadasDr{
+  top: 0px;
+  position:absolute;
+  z-index: -1;
+  display:block;
+  right:73.%;
+
+}
+.derecha:hover{
+      transform:translate(+90px,0px);
+      -ms-transform:translate(+90px,0px); // IE 9
+      -moz-transform:translate(+90px,0px); // Firefox
+      -webkit-transform:translate(+90px,0px); // Safari and Chrome
+      -o-transform:translate(+90px,0px); // Opera
+}
