@@ -1,7 +1,7 @@
 $(document).ready(function() {
 //$('.uno').toggle();
-$('.dos').toggle();
-$('.tres').toggle();
+$('.dos').hide();
+$('.tres').hide();
 
 
 
@@ -58,12 +58,19 @@ function changeframe(){
         $('.tres').toggle();
 
     $(".Inicio").click(function(){
+      $('.dos').hide();
+      $('.tres').hide();
       $('.uno').show();
     });
     $(".LasNotas").click(function(){
+      $('.uno').hide();
+      $('.tres').hide();
       $('.dos').show();
+
     });
     $(".Prueba").click(function(){
+      $('.uno').hide();
+      $('.dos').hide();
       $('.tres').show();
     });
 
@@ -138,12 +145,12 @@ function bien(index){
   $('.7D').css('z-index','2');
   sequence=[];
   actualNote = notes[index].sequence;
-  alert('Bien');
+  alert('♪ ♪ ♪ Bien ♪ ♪ ♪');
   console.log(index);
   $('.title3').html('<h2> Toca el "'+outputNote+'"</h2>');
   if(index === 8){
     $('.title3').html('<h2>"'+outputNote+'"</h2>');
-    alert('Bien hecho, ya sabes tocar una escala de "do" en Gaita');
+    alert('♩♪♫♬ Bien hecho, ya sabes tocar una escala de "do" en Gaita♬♫♪♩');
   }
 return index;
 }
@@ -153,7 +160,7 @@ return index;
 function yourChoose(){
     $(".Boton-Next3").click(function(){
       sequence = sequence.sort();
-      if(sequence.toString() === actualNote.toString()  ? index = bien(index) : alert('Vuelve a intentarlo'));
+      if(sequence.toString() === actualNote.toString()  ? index = bien(index) : alert('☠☠☠  Vuelve a intentarlo  ☠☠☠'));
 
     });
 
