@@ -23,25 +23,56 @@ header:after {
 #Punteros{
   margin: 0 auto;
 }
+#myCarousel{
+  height: 390px;
+}
 .carousel-caption{
   color: black;
   width: 20%;
-  height: 20%;
+  height: 390px;
 }
 .carousel-inner{
-  background: white;
+  background:linear-gradient(to right,rgba(0, 0, 0,0),white,white,white,white,white,rgba(0, 0, 0,0));
+  height: 390px;
+
+}
+#Punteros{
+  width: 25%;
+  height: 29%;
 }
 
 body{
   background-image: url("images/backGround.jpg");
 }
-.Boton-Next{
+.Boton-Next1{
+  margin-top: 4%;
+  margin-left: 43%;
+  width: 15%;
+  height: 15%;
+  text-align: center;
+}
+.Boton-Next2{
   margin-top: 2%;
   margin-left: 43%;
   width: 15%;
   height: 15%;
   text-align: center;
 }
+.Boton-Next3{
+  margin-top: 4%;
+  margin-left: 36%;
+  width: 15%;
+  height: 20%;
+  text-align: center;
+}
+.Boton-Resset{
+  margin-top: 0%;
+  margin-left: 48%;
+  width: 15%;
+  height: 20%;
+  text-align: center;
+}
+
 
 .butonSiguiente-Intro {
   background: #51b3f5;
@@ -167,8 +198,28 @@ body{
   margin: 0 auto;
   width: 65%;
   padding-left: 20%;
+
 }
-.container{
+.col-md-6{
+  height: 8%;
+}
+.title2{
+  width: 30%;
+  background: url("images/BackgroundTitles.jpg");
+  text-align: center;
+  margin: 0 auto;
+  border-style: solid;
+}
+
+.title3{
+  width: 20%;
+  background: url("images/BackgroundTitles.jpg");
+  text-align: center;
+  margin: 0 auto;
+  border-style: solid;
+}
+
+.container3{
   z-index: -3;
   background: linear-gradient(to right,rgba(0, 0, 0,0),white,white,white,rgba(0, 0, 0,0)); /* Standard syntax */
 }
@@ -193,14 +244,14 @@ body{
   position:absolute;
   z-index: 1;
   display:block;
-  left:73.7%;
+  left:79.5%;
 }
 .izquierda:hover{
-      transform:translate(-90px,0px);
-      -ms-transform:translate(-90px,0px); // IE 9
-      -moz-transform:translate(-90px,0px); // Firefox
-      -webkit-transform:translate(-90px,0px); // Safari and Chrome
-      -o-transform:translate(-90px,0px); // Opera
+      transform:translate(-70px,0px);
+      -ms-transform:translate(-70px,0px); // IE 9
+      -moz-transform:translate(-70px,0px); // Firefox
+      -webkit-transform:translate(-70px,0px); // Safari and Chrome
+      -o-transform:translate(-70px,0px); // Opera
 }
 .derecha{
   z-index: +3;
@@ -226,9 +277,9 @@ body{
 
 }
 .derecha:hover{
-      transform:translate(+90px,0px);
-      -ms-transform:translate(+90px,0px); // IE 9
-      -moz-transform:translate(+90px,0px); // Firefox
-      -webkit-transform:translate(+90px,0px); // Safari and Chrome
-      -o-transform:translate(+90px,0px); // Opera
+      transform:translate(+70px,0px);
+      -ms-transform:translate(+70px,0px); // IE 9
+      -moz-transform:translate(+70px,0px); // Firefox
+      -webkit-transform:translate(+70px,0px); // Safari and Chrome
+      -o-transform:translate(+70px,0px); // Opera
 }
