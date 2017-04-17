@@ -48,6 +48,24 @@ var actualNote = notes[index].sequence;
 
 
 function changeframe(){
+
+
+  $(".Inicio").click(function(){
+    $('.dos').hide();
+    $('.tres').hide();
+    $('.uno').show();
+  });
+  $(".LasNotas").click(function(){
+    $('.uno').hide();
+    $('.tres').hide();
+    $('.dos').show();
+
+  });
+  $(".Prueba").click(function(){
+    $('.uno').hide();
+    $('.dos').hide();
+    $('.tres').show();
+  });
     $(".Boton-Next1").click(function(){
       $(this).parent().parent().parent().toggle();
       $('.dos').toggle();
@@ -57,23 +75,7 @@ function changeframe(){
         $(this).parent().parent().toggle();
         $('.tres').toggle();
 
-    $(".Inicio").click(function(){
-      $('.dos').hide();
-      $('.tres').hide();
-      $('.uno').show();
-    });
-    $(".LasNotas").click(function(){
-      $('.uno').hide();
-      $('.tres').hide();
-      $('.dos').show();
-
-    });
-    $(".Prueba").click(function(){
-      $('.uno').hide();
-      $('.dos').hide();
-      $('.tres').show();
-    });
-
+  
 });
 }
 

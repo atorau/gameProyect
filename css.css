@@ -9,6 +9,8 @@ header:after {
   display: block;
   clear: both;
 }
+
+
 .pantalla{
   width: 1505px;
   height: 801px;
@@ -159,8 +161,9 @@ body{
 
 #contenedorTexto{
   background: #000;
+  border: groove;
   padding: 20px 0px 20px 0px;
-  width: 50%;
+  width: 60%;
   height: 50%;
   margin-left: auto;
   margin-right: auto;
