@@ -2,7 +2,7 @@ $(document).ready(function() {
 //$('.uno').toggle();
 $('.dos').hide();
 $('.tres').hide();
-
+$('.cuatro').hide();
 
 
   function PipeGame(){
@@ -33,7 +33,17 @@ var notes =[
   {note:'WellDone',sequence:[1,2,3,4,5,6]}
 ];
 
-
+var song=[
+  {note:'do',sequence:[0,1,2,3,4,5,6,]},
+  {note:'mi',sequence:[0,1,2,3,4,6]},
+  {note:'mi',sequence:[0,1,2,3,4,6]},
+  {note:'fa',sequence:[0,1,2,3,5,6]},
+  {note:'mi',sequence:[0,1,2,3,4,6]},
+  {note:'fa',sequence:[0,1,2,3,5,6]},
+  {note:'sol',sequence:[0,1,2,4,5,6]},
+  {note:'la',sequence:[0,1,4,5,6]},
+  {note:'sol',sequence:[0,1,2,4,5,6]},
+];
 
 
 
@@ -53,18 +63,27 @@ function changeframe(){
   $(".Inicio").click(function(){
     $('.dos').hide();
     $('.tres').hide();
+    $('.cuatro').hide();
     $('.uno').show();
   });
   $(".LasNotas").click(function(){
     $('.uno').hide();
     $('.tres').hide();
+    $('.cuatro').hide();
     $('.dos').show();
 
   });
   $(".Prueba").click(function(){
     $('.uno').hide();
     $('.dos').hide();
+    $('.cuatro').hide();
     $('.tres').show();
+  });
+  $(".Tema").click(function(){
+    $('.uno').hide();
+    $('.dos').hide();
+    $('.tres').hide();
+    $('.cuatro').show();
   });
     $(".Boton-Next1").click(function(){
       $(this).parent().parent().parent().toggle();
@@ -74,9 +93,11 @@ function changeframe(){
     $(".Boton-Next2").click(function(){
         $(this).parent().parent().toggle();
         $('.tres').toggle();
-
-  
-});
+    });
+    $(".Boton-Next4").click(function(){
+        $(this).parent().parent().toggle();
+        $('.cuatro').toggle();
+    });
 }
 
 changeframe();
@@ -181,5 +202,9 @@ function yourChoose(){
 }
 
 yourChoose();
+
+
+
+
 
 });
