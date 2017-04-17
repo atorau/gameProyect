@@ -168,6 +168,10 @@ body{
   width: 65%;
   padding-left: 20%;
 }
+.container{
+  z-index: -3;
+  background: linear-gradient(to right,rgba(0, 0, 0,0),white,white,white,rgba(0, 0, 0,0)); /* Standard syntax */
+}
 
 .izquierda{
   z-index: 2;
@@ -183,10 +187,7 @@ body{
         -ms-transition: all 500ms ease-in-out;
         -o-transition: all 500ms ease-in-out;
 }
-.container{
-  z-index: -3;
-  background: linear-gradient(to right,rgba(0, 0, 0,0),white,white,white,rgba(0, 0, 0,0)); /* Standard syntax */
-}
+
 
 .pulsadasIz{
   position:absolute;
@@ -202,7 +203,7 @@ body{
       -o-transform:translate(-90px,0px); // Opera
 }
 .derecha{
-  z-index: 2;
+  z-index: +3;
   float:left;
   position:relative;
   transform:translate(0px);
@@ -219,7 +220,7 @@ body{
 .pulsadasDr{
   top: 0px;
   position:absolute;
-  z-index: -1;
+  z-index: 0;
   display:block;
   right:73.%;
 
