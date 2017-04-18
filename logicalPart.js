@@ -33,7 +33,7 @@ var notes =[
   {note:'la',sequence:[0,1,4,5,6]},
   {note:'si',sequence:[1,4,5,6]},
   {note:'Do',sequence:[1,2,3,4,5,6]},
-  {note:'WellDone',sequence:[1,2,3,4,5,6]}
+  {note:'WellDone',sequence:[]}
 ];
 
 var song=[
@@ -46,18 +46,10 @@ var song=[
   {note:'sol',sequence:[0,1,2,4,5,6]},
   {note:'la',sequence:[0,1,4,5,6]},
   {note:'sol',sequence:[0,1,2,4,5,6]},
+  {note:'WellDone',sequence:[]}
 ];
 
 
-
-var index = 0;
-var outputNote = notes[index].note;
-  $('.title3').html('<h2> Toca el "'+outputNote+'"</h2>');
-var actualNote = notes[index].sequence;
-
-//this.sequence = [];
-
-// if(this.sequence !== this.actualNote ? alert('lo haces mal') : alert('bien'));
 
 
 function changeframe(){
@@ -117,6 +109,12 @@ function changeframe(){
 }
 
 changeframe();
+
+
+var index = 0;
+var outputNote = notes[index].note;
+  $('.title3').html('<h2> Toca el "'+outputNote+'"</h2>');
+var actualNote = notes[index].sequence;
 
 
 var sequence=[];
@@ -190,6 +188,12 @@ function bien(index){
   if(index === 8){
     $('.title3').html('<h2>"'+outputNote+'"</h2>');
     alert('♩♪♫♬ Bien hecho, ya sabes tocar una escala de "do" en Gaita♬♫♪♩');
+    $('.icon-house3').html('Repetir');
+    sequence=[];
+    index = -1;
+    $(".Boton-Next3").click(function(){
+      $('.icon-house3').html('Comprobar');
+      });
   }
 return index;
 }
@@ -223,7 +227,7 @@ yourChoose();
 
 var indexSong = 0;
 var outputNoteSong = song[indexSong].note;
-  $('.title4').html('<h2> Toca el "'+outputNote+'"</h2>');
+  $('.title4').html('<h2> Toca el "'+outputNoteSong+'"</h2>');
 var actualNoteSong = song[indexSong].sequence;
 var sequenceSong=[];
 
@@ -277,9 +281,9 @@ chooseNoteSong();
 
 
 function bienSong(indexSong){
-  index ++;
-  outputNote = song[index].note;
-  $('.title4').html('<h2> Toca el "'+outputNote+'"</h2>');
+  indexSong ++;
+  outputNoteSong = song[indexSong].note;
+  $('.title4').html('<h2> Toca el "'+outputNoteSong+'"</h2>');
   $('.1T').css('z-index','2');
   $('.1D').css('z-index','3');
   $('.2D').css('z-index','2');
@@ -289,13 +293,20 @@ function bienSong(indexSong){
   $('.6D').css('z-index','2');
   $('.7D').css('z-index','2');
   sequenceSong=[];
-  actualNoteSong = song[index].sequence;
+  actualNoteSong = song[indexSong].sequence;
   alert('♪ ♪ ♪ Bien ♪ ♪ ♪');
   console.log(indexSong);
-  $('.title4').html('<h2> Toca el "'+outputNote+'"</h2>');
-  if(index === 10){
-    $('.title4').html('<h2>"'+outputNote+'"</h2>');
-    alert('♩♪♫♬ Bien hecho, ya sabes tocar una escala de "do" en Gaita♬♫♪♩');
+  $('.title4').html('<h2> Toca el "'+outputNoteSong+'"</h2>');
+  if(indexSong === 9){
+    $('.title4').html('<h2>"'+outputNoteSong+'"</h2>');
+    alert('♩♪♫♬ Bien hecho, ya sabes tocar el principio del "Asturias Patria Querida"♬♫♪♩');
+    abrir('https://www.youtube.com/watch?v=Gf0MTcHpJzY');
+    $('.icon-house5').text('Repetir');
+    sequenceSong=[];
+    indexSong = -1;
+    $(".Boton-Next5").click(function(){
+      $('.icon-house5').text('Comprobar');
+      });
   }
 return indexSong;
 }
