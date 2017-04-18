@@ -204,6 +204,12 @@ body{
   100% { transform: rotateX(45deg) translateY(-400px); }
 }
 
+#Mensaje{
+  text-align: center;
+
+}
+
+
 #mapeado{
   margin: 0 auto;
   width: 65%;

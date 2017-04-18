@@ -1,8 +1,9 @@
 $(document).ready(function() {
-//$('.uno').toggle();
+$('.uno').toggle();
 $('.dos').hide();
 $('.tres').hide();
-$('.cuatro').hide();
+//$('.cuatro').hide();
+$('#notasH').hide();
 
 
   function PipeGame(){
