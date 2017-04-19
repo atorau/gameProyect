@@ -5,6 +5,7 @@
   z-index: 999;
 }*/
 .todo{
+  font-family: FontAwesome;
   max-width: 100%;
   background-image: url("images/backGround.jpg");
 
@@ -81,13 +82,15 @@ header:after {
 
 
 .Boton-Next1{
-  margin-top: 4%;
+  font-size: larger;
+  margin-top: 2.5%;
   margin-left: 43%;
   width: 15%;
   height: 15%;
   text-align: center;
 }
 .Boton-Next2{
+  font-size: larger;
   margin-top: 2%;
   margin-left: 43%;
   width: 15%;
@@ -95,33 +98,37 @@ header:after {
   text-align: center;
 }
 .Boton-Next3{
+  font-size: larger;
   margin-top: 15px;
   float: right;
-  margin-right: 80px;
-  width: 15%;
+  margin-right: 60px;
+  width: 22%;
   height: 17%;
   text-align: center;
 }
 
 .Boton-Next4{
+  font-size: larger;
   margin-top: 15px;
   width: 25%;
   height: 17%;
   text-align: center;
 }
 .Boton-Next5{
+  font-size: larger;
   margin-top: 15px;
   float: right;
-  margin-right: 80px;
-  width: 15%;
+  margin-right: 60px;
+  width: 22%;
   height: 17%;
   text-align: center;
 }
 
 .Boton-Reset{
+  font-size: larger;
   margin-top: 15px;
   float: left;
-  margin-left: 80px;
+  margin-left: 60px;
   width: 19%;
   height: 17%;
   text-align: center;
