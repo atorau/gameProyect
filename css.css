@@ -4,23 +4,55 @@
   position: fixed;
   z-index: 999;
 }*/
+.todo{
+  max-width: 100%;
+  background-image: url("images/backGround.jpg");
+
+}
+navbar{
+  width: auto;
+}
 header:after {
   content: "";
   display: block;
   clear: both;
 }
-span{
-  font-size: x-large;
+.boton:before {
+  display: inline-block;
+ 	outline: none;
+ 	cursor: pointer;
+ 	text-align: center;
+ 	text-decoration: none;
+ 	font: 14px/100% Arial, Helvetica, sans-serif;
+ 	padding: .5em 2em .55em;
+ 	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+ 	-webkit-border-radius: .5em;
+ 	-moz-border-radius: .5em;
+ 	border-radius: .5em;
+ 	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+ 	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+ 	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+
+.boton:hover {
+ background: rgba(0,0,0,0);
+ color: #3a7999;
+ box-shadow: inset 0 0 0 3px #3a7999;
+}
+
+
+
+.carousel{
+  width: 100%;
+  margin-top: 15px;
 }
 
 .pantalla{
-  width: 1505px;
+  width: 100%;
   height: 801px;
 
 }
 .col-md-6{
-  width: 1505px;
-  height: 801px;
   padding-top: 1%;
   margin: 0 auto;
 }
@@ -28,6 +60,7 @@ span{
   margin: 0 auto;
 }
 #myCarousel{
+  width: 100%;
   height: 390px;
 }
 .carousel-caption{
@@ -36,18 +69,17 @@ span{
   height: 390px;
 }
 .carousel-inner{
+  width:100%;
   background:linear-gradient(to right,rgba(0, 0, 0,0),white,white,white,white,white,rgba(0, 0, 0,0));
   height: 390px;
 
 }
 #Punteros{
-  width: 25%;
-  height: 29%;
+  width: 22%;
+  height: 25%;
 }
 
-body{
-  background-image: url("images/backGround.jpg");
-}
+
 .Boton-Next1{
   margin-top: 4%;
   margin-left: 43%;
@@ -63,37 +95,39 @@ body{
   text-align: center;
 }
 .Boton-Next3{
-  margin-top: 4%;
-  margin-left: 35%;
+  margin-top: 15px;
+  float: right;
+  margin-right: 80px;
   width: 15%;
   height: 17%;
   text-align: center;
 }
 
 .Boton-Next4{
-  margin-top: 6%;
-  margin-left: 38%;
+  margin-top: 15px;
   width: 25%;
   height: 17%;
   text-align: center;
 }
 .Boton-Next5{
-  margin-top: 4%;
-  margin-left: 35%;
+  margin-top: 15px;
+  float: right;
+  margin-right: 80px;
   width: 15%;
   height: 17%;
   text-align: center;
 }
 
-.Boton-Resset{
-  margin-top: -0.7%;
-  margin-left: 49%;
+.Boton-Reset{
+  margin-top: 15px;
+  float: left;
+  margin-left: 80px;
   width: 19%;
   height: 17%;
   text-align: center;
 }
 
-
+/*
 .butonSiguiente-Intro {
   background: #51b3f5;
   background-image: -webkit-linear-gradient(top, #51b3f5, #0f679e);
@@ -113,9 +147,9 @@ body{
   font-size: 25px;
   padding: 23px;
   text-decoration: none;
-}
+}*/
 
-.butonSiguiente-Intro:hover{
+/*.butonSiguiente-Intro:hover{
   background: #3cb0fd;
  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
@@ -123,13 +157,13 @@ body{
  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
  text-decoration: none;
-}
+}*/
 
 
 
 
 
-.butonSiguiente-Notas {
+/*.butonSiguiente-Notas {
   background: #51b3f5;
   background-image: -webkit-linear-gradient(top, #51b3f5, #0f679e);
   background-image: -moz-linear-gradient(top, #51b3f5, #0f679e);
@@ -148,8 +182,8 @@ body{
   font-size: 35px;
   padding: 23px;
   text-decoration: none;
-}
-
+}*/
+/*
 .butonSiguiente-Notas:hover{
   background: #3cb0fd;
  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
@@ -158,7 +192,7 @@ body{
  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
  text-decoration: none;
-}
+}*/
 
 #gpluslogin {
     color: #FFFF00;
@@ -341,19 +375,19 @@ body{
 
 
 .container3{
-  width: 1505px;
+  margin-top: 15px;
   height: 400px;
-  padding-top: 1px;
-  margin:  20px auto;
-  z-index: -3;
+  /*padding-top: 1px;
+  margin:  20px auto;*/
+  z-index: 0;
   background: linear-gradient(to right,rgba(0, 0, 0,0),white,white,white,rgba(0, 0, 0,0)); /* Standard syntax */
 }
 
 .container4{
-  width: 1505px;
+  margin-top: 15px;
   height: 400px;
-  padding-top: 1px;
-  margin: 20px auto;
+  /*padding-top: 1px;
+  margin: 20px auto;*/
   z-index: -3;
   background: linear-gradient(to right,rgba(0, 0, 0,0),white,white,white,rgba(0, 0, 0,0)); /* Standard syntax */
 }
@@ -386,16 +420,19 @@ body{
 
 
 .pulsadasIz{
-  position:absolute;
+  position:relative;
   z-index: 1;
   display:block;
-  left:80%;
+  float: right;
+  left: 139px;
+
 }
 .pulsadasIz2{
-  position:absolute;
+  position:relative;
   z-index: 1;
   display:block;
-  left:80%;
+  float: right;
+  left: 139px;
 }
 .izquierda:hover{
       transform:translate(-70px,0px);
@@ -420,7 +457,7 @@ body{
 }
 
 .pulsadasDr{
-  top: 0px;
+  /*top: 0px;*/
   position:absolute;
   z-index: 0;
   display:block;
@@ -433,4 +470,9 @@ body{
       -moz-transform:translate(+70px,0px); // Firefox
       -webkit-transform:translate(+70px,0px); // Safari and Chrome
       -o-transform:translate(+70px,0px); // Opera
+}
+
+.centrado{
+  display:flex;
+  justify-content: center;
 }

@@ -2,7 +2,7 @@ $(document).ready(function() {
 //$('.uno').toggle();
 $('.dos').hide();
 $('.tres').hide();
-$('.row').hide();
+//$('.row').hide();
 
 $('.cuatro').hide();
 
@@ -25,28 +25,28 @@ $('.cuatro').hide();
   }
 
 var notes =[
-  {note:'do',sequence:[0,1,2,3,4,5,6,]},
-  {note:'re',sequence:[0,1,2,3,4,5]},
-  {note:'mi',sequence:[0,1,2,3,4,6]},
-  {note:'fa',sequence:[0,1,2,3,5,6]},
-  {note:'sol',sequence:[0,1,2,4,5,6]},
-  {note:'la',sequence:[0,1,4,5,6]},
-  {note:'si',sequence:[1,4,5,6]},
-  {note:'Do',sequence:[1,2,3,4,5,6]},
-  {note:'WellDone',sequence:[]}
+  {note:'do',sequence:[0,1,2,3,4,5,6,],sonido:"midi/Do.mp3",},
+  {note:'re',sequence:[0,1,2,3,4,5],sonido:"midi/Re.mp3",},
+  {note:'mi',sequence:[0,1,2,3,4,6],sonido:"midi/Mi.mp3",},
+  {note:'fa',sequence:[0,1,2,3,5,6],sonido:"midi/Fa.mp3",},
+  {note:'sol',sequence:[0,1,2,4,5,6],sonido:"midi/Sol.mp3",},
+  {note:'la',sequence:[0,1,4,5,6],sonido:"midi/La.mp3",},
+  {note:'si',sequence:[1,4,5,6],sonido:"midi/Si.mp3",},
+  {note:'Do',sequence:[1,2,3,4,5,6],sonido:"midi/DO!.mp3",},
+  {note:'WellDone',sequence:[],sonido:"midi/Vitores.mp3",}
 ];
 
 var song=[
-  {note:'do',sequence:[0,1,2,3,4,5,6,]},
-  {note:'mi',sequence:[0,1,2,3,4,6]},
-  {note:'mi',sequence:[0,1,2,3,4,6]},
-  {note:'fa',sequence:[0,1,2,3,5,6]},
-  {note:'mi',sequence:[0,1,2,3,4,6]},
-  {note:'fa',sequence:[0,1,2,3,5,6]},
-  {note:'sol',sequence:[0,1,2,4,5,6]},
-  {note:'la',sequence:[0,1,4,5,6]},
-  {note:'sol',sequence:[0,1,2,4,5,6]},
-  {note:'WellDone',sequence:[]}
+  {note:'do',sequence:[0,1,2,3,4,5,6,],sonido:"midi/Do.mp3",},
+  {note:'mi',sequence:[0,1,2,3,4,6],sonido:"midi/Mi.mp3",},
+  {note:'mi',sequence:[0,1,2,3,4,6],sonido:"midi/Mi.mp3",},
+  {note:'fa',sequence:[0,1,2,3,5,6],sonido:"midi/Fa.mp3",},
+  {note:'mi',sequence:[0,1,2,3,4,6],sonido:"midi/Mi.mp3",},
+  {note:'fa',sequence:[0,1,2,3,5,6],sonido:"midi/Fa.mp3",},
+  {note:'sol',sequence:[0,1,2,4,5,6],sonido:"midi/Sol.mp3",},
+  {note:'la',sequence:[0,1,4,5,6],sonido:"midi/La.mp3",},
+  {note:'sol',sequence:[0,1,2,4,5,6],sonido:"midi/Sol.mp3",},
+  {note:'WellDone',sequence:[],sonido:"midi/Vitores.mp3", }
 ];
 
 
@@ -60,12 +60,14 @@ function changeframe(){
     $('.tres').hide();
     $('.cuatro').hide();
     $('.uno').show();
+    $('.row').show();
   });
   $(".LasNotas").click(function(){
     $('.uno').hide();
     $('.tres').hide();
     $('.cuatro').hide();
     $('.dos').show();
+    $('.row').show();
 
   });
   $(".Prueba").click(function(){
@@ -80,30 +82,29 @@ function changeframe(){
     $('.uno').hide();
     $('.dos').hide();
     $('.tres').hide();
-    $('.row').hide();
+    $('.cancion').hide();
     $('.cuatro').show();
     $('.textoHimno').show();
   });
     $(".Boton-Next1").click(function(){
-      $(this).parent().parent().parent().toggle();
-      $('.row').show();
-      $('.dos').toggle();
+      // $(this).parent().toggle();
+      $('.uno').hide();
+      $('.dos').show();
     });
 
     $(".Boton-Next2").click(function(){
-        $(this).parent().parent().toggle();
-        $('.row').show();
-        $('.tres').toggle();
+        // $(this).parent().toggle();
+        $('.dos').hide();
+        $('.tres').show();
     });
     $(".Boton-Next4").click(function(){
-        $('.row').toggle();
+        $('.tres').hide();
+        $('.cancion').hide();
         $('.textoHimno').show();
-        $(this).parent().parent().toggle();
-
-        $('.cuatro').toggle();
+        $('.cuatro').show();
     });
     $("#gpluslogin").click(function(){
-        $('.row').show();
+        $('.cancion').show();
         $('.textoHimno').hide();
     });
 }
@@ -112,10 +113,12 @@ changeframe();
 
 
 var index = 0;
+var indexNota = 0;
+
 var outputNote = notes[index].note;
   $('.title3').html('<h2> Toca el "'+outputNote+'"</h2>');
 var actualNote = notes[index].sequence;
-
+var actualSonido = notes[indexNota].sonido;
 
 var sequence=[];
 
@@ -169,7 +172,13 @@ function chooseNote(){
 chooseNote();
 
 function bien(index){
+  if (indexNota != -1) {
+    $('#test').append('<audio autoplay src="'+ notes[indexNota].sonido + '"></audio>');
+
+  }
+  indexNota++;
   index ++;
+
   outputNote = notes[index].note;
   $('.title3').html('<h2> Toca el "'+outputNote+'"</h2>');
   $('.1T').css('z-index','2');
@@ -182,17 +191,30 @@ function bien(index){
   $('.7D').css('z-index','2');
   sequence=[];
   actualNote = notes[index].sequence;
+  actualSonido = notes[indexNota].sonido;
   alert('♪ ♪ ♪ Bien ♪ ♪ ♪');
-  console.log(index);
+  // $('#test').append('<audio autoplay src="'+ notes[index-1].sonido + '"></audio>');
+  // console.log("---------");
+  // console.log(notes[index].note);
+  //
+  // console.log(notes[index-1].sonido);
+  // console.log("---------");
+  //
+  // console.log(index);
   $('.title3').html('<h2> Toca el "'+outputNote+'"</h2>');
   if(index === 8){
     $('.title3').html('<h2>"'+outputNote+'"</h2>');
     alert('♩♪♫♬ Bien hecho, ya sabes tocar una escala de "do" en Gaita♬♫♪♩');
-    $('.icon-house3').html('Repetir');
+    $('.icon-house3').text('Repetir');
     sequence=[];
     index = -1;
+    indexNota = -1;
+
+
     $(".Boton-Next3").click(function(){
-      $('.icon-house3').html('Comprobar');
+
+      $('.icon-house3').text('Comprobar');
+
       });
   }
 return index;
@@ -208,7 +230,7 @@ function yourChoose(){
     });
 
 
-    $(".Boton-Resset").click(function(){
+    $(".Boton-Reset").click(function(){
         $('.1T').css('z-index','2');
         $('.1D').css('z-index','3');
         $('.2D').css('z-index','2');
@@ -226,9 +248,13 @@ yourChoose();
 
 
 var indexSong = 0;
+var indexSongNota = 0;
+
 var outputNoteSong = song[indexSong].note;
   $('.title4').html('<h2> Toca el "'+outputNoteSong+'"</h2>');
 var actualNoteSong = song[indexSong].sequence;
+var actualSonidoSong = song[indexSongNota].sonido;
+
 var sequenceSong=[];
 
 function chooseNoteSong(){
@@ -281,7 +307,16 @@ chooseNoteSong();
 
 
 function bienSong(indexSong){
+  if (indexSongNota != -1) {
+    $('#test').append('<audio autoplay src="'+ song[indexSongNota].sonido + '"></audio>');
+
+  }
+
+
+  indexSongNota++;
   indexSong ++;
+
+
   outputNoteSong = song[indexSong].note;
   $('.title4').html('<h2> Toca el "'+outputNoteSong+'"</h2>');
   $('.1T').css('z-index','2');
@@ -294,8 +329,12 @@ function bienSong(indexSong){
   $('.7D').css('z-index','2');
   sequenceSong=[];
   actualNoteSong = song[indexSong].sequence;
+  actualSonidoSong = song[indexSongNota].sonido;
   alert('♪ ♪ ♪ Bien ♪ ♪ ♪');
-  console.log(indexSong);
+  // $('#test').append('<audio autoplay src="'+ song[indexSong -1].sonido + '"></audio>');
+
+  // console.log(indexSong);
+
   $('.title4').html('<h2> Toca el "'+outputNoteSong+'"</h2>');
   if(indexSong === 9){
     $('.title4').html('<h2>"'+outputNoteSong+'"</h2>');
@@ -304,8 +343,12 @@ function bienSong(indexSong){
     $('.icon-house5').text('Repetir');
     sequenceSong=[];
     indexSong = -1;
+    indexNotaSong = -1;
+
     $(".Boton-Next5").click(function(){
+
       $('.icon-house5').text('Comprobar');
+
       });
   }
 return indexSong;
@@ -321,7 +364,7 @@ function yourChooseSong(){
     });
 
 
-    $(".Boton-Resset").click(function(){
+    $(".Boton-Reset").click(function(){
         $('.1T').css('z-index','2');
         $('.1D').css('z-index','3');
         $('.2D').css('z-index','2');

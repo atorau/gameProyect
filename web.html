@@ -12,6 +12,10 @@
   <script> function abrir(url) { open(url,'','top=230,left=480,width=450,height=400') ; } </script>
   <title>Document</title>
 </head>
+<body>
+<div class="todo">
+
+
 <header>
   <nav class="navbar navbar-default">
     <div class="container-fluid">
@@ -37,36 +41,32 @@
                   </ul>
               </li>
             </ul>
-      </div>
     </div>
-  </nav>
+  </div>
+</nav>
 </header>
-
-<body>
   <div class="pantalla uno" >
-    <div class="col-md-6">
-      <div class="container">
+      <div class="row">
           <div id="contenedorTexto">
             <div id="textoStarwars">
                 Bienvenidos al primer curso interativo de Gaita Asturiana<br/><br/>
                 A lo largo de este curso, aprenderás las nociones básicas para poder tocar una Gaita con la digitalizacion Asturiana,
                 y aprenderás la secuencia de notas necesaria para poder tocar el <br><i><u>"Himno de Asturias!!!!"</u></i> <br><br><br><br><h3>Disfruta aprendiendo!!!</h3>
             </div>
-            <audio id="Intro" src="midi/IntroDixebra.mp3" preload="auto" controls > </audio>
-          </div>
-            <div class="Boton-Next1">
-              <span class="butonSiguiente-Intro">Las Notas</span>
+            <!-- <audio id="Intro" src="midi/IntroDixebra.mp3" preload="auto" controls > </audio> -->
             </div>
       </div>
+      <div class="row ">
+        <!-- <div class="col-md-6 col-md-offset-3"> -->
+          <button class="Boton-Next1 btn btn-primary ">Las Notas</button>
+      <!-- </div> -->
     </div>
   </div>
-  <div class="pantalla dos" >
-    <div class="col-md-6 col-md-offset-3">
-      <div class="title2">
+<div class="pantalla dos" >
+  <div class="row title2">
       <h2>APRENDE LAS NOTAS</h2>
-    </div>
-    <div class="container">
-      <br>
+  </div>
+    <div class="row carousel">
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
@@ -178,199 +178,167 @@
         </a>
       </div>
     </div>
-    <div class="Boton-Next2">
-      <span class="butonSiguiente-Intro">Siguiente</span>
-    </div>
-
-
-    </div>
+    <div class="row">
+      <!-- <div class="col-md-6 col-md-offset-3"> -->
+        <button class="Boton-Next2 btn btn-primary ">Siguiente</button>
+    <!-- </div> -->
   </div>
 </div>
 <div class="pantalla tres" >
-    <div class="col-md-6 col-md-offset-3">
-      <div class="title3">
-      <h2>TOCA LAS NOTAS</h2>
+  <div class="row title3">
+    <h2>TOCA LAS NOTAS</h2>
+  </div>
+  <div class="row container3">
+
+      <div class="col-xs-6 ">
+        <img class="izquierda 1D" src="images/PunteroDestapado1D.jpg" alt="punteros">
+        <img class="pulsadasIz" src="images/PunteroTapado1D.jpg" alt="tapados">
     </div>
+    <div class="col-xs-6">
+      <img class="derecha 1T" src="images/PunteroDestapado1T.jpg" alt="punteros">
+      <img class="pulsadasDr" src="images/PunteroTapado1T.jpg" alt="tapados">
     </div>
-      <div class="col-md-6">
-        <div class="container3">
-          <div class="row">
-            <div id="notas" class="col-xs-6 ">
-              <img class="izquierda 1D" src="images/PunteroDestapado1D.jpg" alt="punteros">
-               <div class="pulsadasIz">
-                 <img src="images/PunteroTapado1D.jpg" alt="tapados">
-               </div>
-            </div>
-            <div id="notas" class="col-xs-6">
-              <img class="derecha 1T" src="images/PunteroDestapado1T.jpg" alt="punteros">
-                <div class="pulsadasDr">
-                  <img src="images/PunteroTapado1T.jpg" alt="tapados">
-                </div>
-            </div>
-            <div class="col-xs-6">
-              <img class="izquierda 2D" src="images/PunteroDestapado2D.jpg" alt="punteros">
-              <div class="pulsadasIz">
-                <img src="images/PunteroTapado2D.jpg" alt="tapados">
-              </div>
-            </div>
-            <div class="col-xs-6">
-              <img src="images/PunteroDestapado2T.jpg" alt="punteros">
-            </div>
-            <div class="col-xs-6">
-              <img class="izquierda 3D" src="images/PunteroDestapado3D.jpg" alt="punteros">
-              <div class="pulsadasIz">
-                <img src="images/PunteroTapado3D.jpg" alt="tapados">
-              </div>
-            </div>
-            <div class="col-xs-6">
-              <img src="images/PunteroDestapado3T.jpg" alt="punteros">
-            </div>
-            <div class="col-xs-6">
-              <img class="izquierda 4D" src="images/PunteroDestapado4D.jpg" alt="punteros">
-              <div class="pulsadasIz">
-                <img src="images/PunteroTapado4D.jpg" alt="tapados">
-              </div>
-            </div>
-            <div class="col-xs-6">
-              <img src="images/PunteroDestapado4T.jpg" alt="punteros">
-            </div>
-            <div class="col-xs-6">
-              <img class="izquierda 5D" src="images/PunteroDestapado5D.jpg" alt="punteros">
-              <div class="pulsadasIz">
-                <img src="images/PunteroTapado5D.jpg" alt="tapados">
-              </div>
-            </div>
-            <div class="col-xs-6">
-              <img src="images/PunteroDestapado5T.jpg" alt="punteros">
-            </div>
-            <div class="col-xs-6">
-              <img class="izquierda 6D" src="images/PunteroDestapado6D.jpg" alt="punteros">
-              <div class="pulsadasIz">
-                <img src="images/PunteroTapado6D.jpg" alt="tapados">
-              </div>
-            </div>
-            <div class="col-xs-6">
-              <img src="images/PunteroDestapado6T.jpg" alt="punteros">
-            </div>
-            <div class="col-xs-6">
-              <img class="izquierda 7D" src="images/PunteroDestapado7D.jpg" alt="punteros">
-              <div class="pulsadasIz">
-                <img src="images/PunteroTapado7D.jpg" alt="tapados">
-              </div>
-            </div>
-            <div class="col-xs-6">
-              <img src="images/PunteroDestapado7T.jpg" alt="punteros">
-            </div>
-          </div>
-        </div>
-        <div class="Boton-Next3">
-          <span class="butonSiguiente-Intro icon-house3">Comprobar</span>
-        </div>
-        <div class="Boton-Resset">
-          <span class="butonSiguiente-Intro">Reset</span>
-        </div>
-        <div class="Boton-Next4">
-          <span class="butonSiguiente-Intro">A por el Himno</span>
-        </div>
+    <div class="col-xs-6">
+      <img class="izquierda 2D" src="images/PunteroDestapado2D.jpg" alt="punteros">
+      <img class="pulsadasIz" src="images/PunteroTapado2D.jpg" alt="tapados">
+    </div>
+    <div class="col-xs-6">
+      <img src="images/PunteroDestapado2T.jpg" alt="punteros">
+    </div>
+    <div class="col-xs-6">
+      <img class="izquierda 3D" src="images/PunteroDestapado3D.jpg" alt="punteros">
+      <img class="pulsadasIz" src="images/PunteroTapado3D.jpg" alt="tapados">
+    </div>
+    <div class="col-xs-6">
+      <img src="images/PunteroDestapado3T.jpg" alt="punteros">
+    </div>
+    <div class="col-xs-6">
+      <img class="izquierda 4D" src="images/PunteroDestapado4D.jpg" alt="punteros">
+      <img class="pulsadasIz" src="images/PunteroTapado4D.jpg" alt="tapados">
+    </div>
+    <div class="col-xs-6">
+      <img src="images/PunteroDestapado4T.jpg" alt="punteros">
+    </div>
+    <div class="col-xs-6">
+      <img class="izquierda 5D" src="images/PunteroDestapado5D.jpg" alt="punteros">
+      <img class="pulsadasIz" src="images/PunteroTapado5D.jpg" alt="tapados">
+    </div>
+    <div class="col-xs-6">
+      <img src="images/PunteroDestapado5T.jpg" alt="punteros">
+    </div>
+    <div class="col-xs-6">
+      <img class="izquierda 6D" src="images/PunteroDestapado6D.jpg" alt="punteros">
+      <img class="pulsadasIz" src="images/PunteroTapado6D.jpg" alt="tapados">
+    </div>
+    <div class="col-xs-6">
+      <img src="images/PunteroDestapado6T.jpg" alt="punteros">
+    </div>
+    <div class="col-xs-6">
+      <img class="izquierda 7D" src="images/PunteroDestapado7D.jpg" alt="punteros">
+      <img class="pulsadasIz" src="images/PunteroTapado7D.jpg" alt="tapados">
+    </div>
+    <div class="col-xs-6">
+      <img src="images/PunteroDestapado7T.jpg" alt="punteros">
+    </div>
+  </div>
+    <!-- <div class="col-md-6 col-md-offset-3"> -->
+  <!-- </div> -->
+    <!-- <div class="col-md-6">
+      <div class="container3"> -->
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <button class="Boton-Next3 btn btn-primary icon-house3 ">Comprobar</button>
+      </div>
+      <div class="col-md-6 col-md-offset-3 ">
+        <button class="Boton-Reset btn btn-primary ">Reset</button>
       </div>
     </div>
+    <div class="row">
+      <div class="centrado">
+        <button class="Boton-Next4 btn btn-primary">A por el Himno</button>
+      </div>
   </div>
 </div>
 <div class="pantalla cuatro">
-  <div class="col-md-6 col-md-offset-3">
-    <div class="title4">
+  <div class="row title4">
       <h2>Himno</h2>
+  </div>
+  <div class="row container4 ">
+      <div class="textoHimno">
+        <h1>Ahora vamos a tocar las primeras nueve notas de el<br> "Himno de Asturias"</h1>
+        <button type="button" id="gpluslogin"><small><small>Α</small></small><big><big>✟</big></big><small><small>Ω</small></small><em id="gpname"></em>
+				<span id="gptext">Vamos a tocar!!!</span>
+			</button>
+      </div>
+      <div class="row cancion">
+        <div class="col-xs-6 ">
+          <img class="izquierda 1D" src="images/PunteroDestapado1D.jpg" alt="punteros">
+          <img class="pulsadasIz2" src="images/PunteroTapado1D.jpg" alt="tapados">
+        </div>
+        <div class="col-xs-6">
+          <img class="derecha 1T" src="images/PunteroDestapado1T.jpg" alt="punteros">
+          <img class="pulsadasDr" src="images/PunteroTapado1T.jpg" alt="tapados">
+        </div>
+        <div class="col-xs-6">
+          <img class="izquierda 2D" src="images/PunteroDestapado2D.jpg" alt="punteros">
+          <img class="pulsadasIz2" src="images/PunteroTapado2D.jpg" alt="tapados">
+        </div>
+        <div class="col-xs-6">
+          <img src="images/PunteroDestapado2T.jpg" alt="punteros">
+        </div>
+        <div class="col-xs-6">
+          <img class="izquierda 3D" src="images/PunteroDestapado3D.jpg" alt="punteros">
+          <img class="pulsadasIz2" src="images/PunteroTapado3D.jpg" alt="tapados">
+        </div>
+        <div class="col-xs-6">
+          <img src="images/PunteroDestapado3T.jpg" alt="punteros">
+        </div>
+        <div class="col-xs-6">
+          <img class="izquierda 4D" src="images/PunteroDestapado4D.jpg" alt="punteros">
+          <img class="pulsadasIz2" src="images/PunteroTapado4D.jpg" alt="tapados">
+        </div>
+        <div class="col-xs-6">
+          <img src="images/PunteroDestapado4T.jpg" alt="punteros">
+        </div>
+        <div class="col-xs-6">
+          <img class="izquierda 5D" src="images/PunteroDestapado5D.jpg" alt="punteros">
+          <img class="pulsadasIz2" src="images/PunteroTapado5D.jpg" alt="tapados">
+        </div>
+        <div class="col-xs-6">
+          <img src="images/PunteroDestapado5T.jpg" alt="punteros">
+        </div>
+        <div class="col-xs-6">
+          <img class="izquierda 6D" src="images/PunteroDestapado6D.jpg" alt="punteros">
+          <img class="pulsadasIz2" src="images/PunteroTapado6D.jpg" alt="tapados">
+        </div>
+        <div class="col-xs-6">
+          <img src="images/PunteroDestapado6T.jpg" alt="punteros">
+        </div>
+        <div class="col-xs-6">
+          <img class="izquierda 7D" src="images/PunteroDestapado7D.jpg" alt="punteros">
+          <img class="pulsadasIz2" src="images/PunteroTapado7D.jpg" alt="tapados">
+        </div>
+        <div class="col-xs-6">
+          <img src="images/PunteroDestapado7T.jpg" alt="punteros">
+        </div>
     </div>
   </div>
-    <div class="col-md-6 ">
-      <div class="container4">
-        <div class="textoHimno">
-          <h1>Ahora vamos a tocar las primeras nueve notas de el<br> "Himno de Asturias"</h1>
-
-          <button type="button" id="gpluslogin"><small><small>Α</small></small><big><big>✟</big></big><small><small>Ω</small></small><em id="gpname"></em>
-					<span id="gptext">Vamos a tocar!!!</span>
-				</button>
-        </div>
-        <div class="row">
-          <div id="notas" class="col-xs-6 ">
-            <img class="izquierda 1D" src="images/PunteroDestapado1D.jpg" alt="punteros">
-             <div class="pulsadasIz2">
-               <img src="images/PunteroTapado1D.jpg" alt="tapados">
-             </div>
-          </div>
-          <div id="notas" class="col-xs-6">
-            <img class="derecha 1T" src="images/PunteroDestapado1T.jpg" alt="punteros">
-              <div class="pulsadasDr">
-                <img src="images/PunteroTapado1T.jpg" alt="tapados">
-              </div>
-          </div>
-          <div class="col-xs-6">
-            <img class="izquierda 2D" src="images/PunteroDestapado2D.jpg" alt="punteros">
-            <div class="pulsadasIz2">
-              <img src="images/PunteroTapado2D.jpg" alt="tapados">
-            </div>
-          </div>
-          <div class="col-xs-6">
-            <img src="images/PunteroDestapado2T.jpg" alt="punteros">
-          </div>
-          <div class="col-xs-6">
-            <img class="izquierda 3D" src="images/PunteroDestapado3D.jpg" alt="punteros">
-            <div class="pulsadasIz2">
-              <img src="images/PunteroTapado3D.jpg" alt="tapados">
-            </div>
-          </div>
-          <div class="col-xs-6">
-            <img src="images/PunteroDestapado3T.jpg" alt="punteros">
-          </div>
-          <div class="col-xs-6">
-            <img class="izquierda 4D" src="images/PunteroDestapado4D.jpg" alt="punteros">
-            <div class="pulsadasIz2">
-              <img src="images/PunteroTapado4D.jpg" alt="tapados">
-            </div>
-          </div>
-          <div class="col-xs-6">
-            <img src="images/PunteroDestapado4T.jpg" alt="punteros">
-          </div>
-          <div class="col-xs-6">
-            <img class="izquierda 5D" src="images/PunteroDestapado5D.jpg" alt="punteros">
-            <div class="pulsadasIz2">
-              <img src="images/PunteroTapado5D.jpg" alt="tapados">
-            </div>
-          </div>
-          <div class="col-xs-6">
-            <img src="images/PunteroDestapado5T.jpg" alt="punteros">
-          </div>
-          <div class="col-xs-6">
-            <img class="izquierda 6D" src="images/PunteroDestapado6D.jpg" alt="punteros">
-            <div class="pulsadasIz2">
-              <img src="images/PunteroTapado6D.jpg" alt="tapados">
-            </div>
-          </div>
-          <div class="col-xs-6">
-            <img src="images/PunteroDestapado6T.jpg" alt="punteros">
-          </div>
-          <div class="col-xs-6">
-            <img class="izquierda 7D" src="images/PunteroDestapado7D.jpg" alt="punteros">
-            <div class="pulsadasIz2">
-              <img src="images/PunteroTapado7D.jpg" alt="tapados">
-            </div>
-          </div>
-          <div class="col-xs-6">
-            <img src="images/PunteroDestapado7T.jpg" alt="punteros">
-          </div>
-        </div>
-      </div>
-      <div class="Boton-Next5">
-        <span class="butonSiguiente-Intro icon-house5">Comprobar</span>
-      </div>
-      <div class="Boton-Resset">
-        <span class="butonSiguiente-Intro">Reset</span>
-      </div>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <button class="Boton-Next5 btn btn-primary icon-house5 ">Comprobar</button>
     </div>
+    <div class="col-md-6 col-md-offset-3 ">
+      <button class="Boton-Reset btn btn-primary ">Reset</button>
+    </div>
+  </div>
+  </div>
       <!-- <a class="video" href="javascript:abrir('https://www.youtube.com/watch?v=Gf0MTcHpJzY')"></a> -->
   </div>
 </div>
+<!-- </div>
+</div> -->
 </div>
+<div id="test"></div>
 </body>
 <script src="logicalPart.js"></script>
 </html>
