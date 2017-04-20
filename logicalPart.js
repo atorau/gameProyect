@@ -383,17 +383,8 @@ yourChooseSong();
 if (annyang) {
   // Let's define our first command. First the text we expect, and then the function it should call
   var commands = {
-    'Inicio': function() {
-      $(".Inicio").click();
-    }
-    'Notas': function() {
-      $(".LasNotas").click();
-    }
-    'Prueba': function() {
-      $(".Prueba").click();
-    }
-    'Cancion': function() {
-      $(".Tema").click();
+    '1': function() {
+      $(".1T").click();
     }
   };
 
