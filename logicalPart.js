@@ -384,7 +384,7 @@ if (annyang) {
   // Let's define our first command. First the text we expect, and then the function it should call
   var commands = {
     'Notas': function() {
-      $(".Inicio").click();
+      $(".Boton-Next1").click();
     }
   };
 
