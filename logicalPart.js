@@ -383,8 +383,8 @@ yourChooseSong();
 if (annyang) {
   // Let's define our first command. First the text we expect, and then the function it should call
   var commands = {
-    'show': function() {
-      console.log('que quieres pesado');
+    'Notas': function() {
+      $(".Inicio").click();
     }
   };
 
